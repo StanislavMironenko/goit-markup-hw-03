@@ -40,7 +40,6 @@ body{
 .header{
     color: var(--secondary-color-);
     font-style: normal;
-    margin-bottom: 54px;
     border-bottom:  1px solid #ECECEC;
 }
 .header a{
@@ -98,7 +97,7 @@ body{
 }
 .link{
     font-size: 14px;
-    font-weight: medium;
+    font-weight: 500;
     line-height: 1.14;
     color: var(--main-color-);
 }
@@ -113,15 +112,21 @@ body{
 
 /* Main */
 .section{
-    padding: 94px 0;
+    padding-bottom: 94px;
 }
 .hero{
+ 
     background-color: aqua;
     text-align: center;
     margin-bottom: 40px;
 }
+.hero>.container{
+    padding: 200px 0;
+    width: 696px;
+}
 
 .hero-title{
+    font-weight: 900;
     color: var(--white-color);
     font-size: 44px;
     line-height: 1.36;
@@ -130,6 +135,9 @@ body{
 
     text-transform: uppercase;
     letter-spacing: 0.06em;
+}
+.invis{
+    opacity: 0;
 }
 .benefits-list{
     display: flex;
@@ -176,7 +184,7 @@ body{
     margin-right: 30px;
 }
 .team-name{
-    margin-bottom: 10px;
+    
     font-size: 16px;
     font-weight: 500;
     line-height: 1.17;
@@ -186,14 +194,17 @@ body{
 }
 .team-text{
     line-height: 1.17;
-    margin-bottom: 30px;
+    
 }
 .team-card{
     background-color: var(--main-bc-);
     text-align: center;
 }
-.team-img{
-    margin-bottom: 30px;
+
+
+.team-info{
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 .port-title{
     font-size: 18px;
@@ -215,13 +226,18 @@ body{
     font-weight: 500;
     font-size: 16px;
     line-height:1.62;
-    background-color: var(--button-bc-);
-    color: var(--header-color-);
     text-align: center;
     letter-spacing: 0.03em;
-    border-radius: 4px;
+
+    background-color: var(--button-bc-);
+    color: var(--header-color-);
+    border: transparent 0;
+    border-radius: 4px ;
+    padding: 6px 22px;
 }
 .btn{
+    height: 50px;
+    width: 200px;
     font-weight: 700;
     letter-spacing: 0.06em;
     line-height: 1.87;
@@ -249,10 +265,16 @@ color: var(--white-color);
 
 /* footer */
 .footer{ 
-
+    
     background-color: #2F303A;
     color: var(--white-color);
     letter-spacing: 0.03em;
+    line-height: 1.71;
+    font-weight: 400;
+}
+.footer>.container{
+    padding-top:  60px;
+    padding-bottom: 60px;
 }
 .footer a{
     text-decoration: none;
@@ -279,16 +301,21 @@ color: var(--white-color);
 .contacts{
     display: flex;
     flex-direction: column;
-    padding-bottom: 51px;
+    font-size: 14px;
+    
 }
 .contacts address{
     font-style: normal;
     margin-bottom: 9px;
+  
 }
 .contacts>a{
     margin-bottom: 9px;
 }
 /* Portfolio */
+.port{
+    padding-top: 94px;
+}
 
 .filters{
     display: flex;
@@ -307,20 +334,26 @@ color: var(--white-color);
     margin-right: 30px;
     margin-bottom: 30px;
     display: block;
-    border-bottom: 1px solid #EEEEEE ;
+    /* border-bottom: 1px solid #EEEEEE ; */
 }
     
 .project .item:nth-child(3n+3){
     margin-right: 0;
 }
 .port-img{
-    margin-bottom: 20px;
+    /* margin-bottom: 20px; */
 }
 .port-title{
-    margin-bottom: 4px;
-    margin-left: 20px;
+    /* padding-bottom: 4px;
+    margin-left: 20px; */
 }   
 .port-name{
-    margin-bottom: 20px;
-    margin-left: 20px;
+    /* margin-bottom: 20px;
+    margin-left: 20px; */
+}
+.project-info{
+padding: 20px 24px;
+border-bottom: 1px solid #EEEEEE  ;
+border-right:  1px solid #EEEEEE ;
+border-left:  1px solid #EEEEEE ;
 }
